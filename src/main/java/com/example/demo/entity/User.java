@@ -17,6 +17,9 @@ public class User {
     private String username;
     private String password;
 
+    @Enumerated(value = EnumType.STRING)
+    private RoleEnum roleEnum;
+
 
     @ManyToMany(cascade = {
             CascadeType.PERSIST,
