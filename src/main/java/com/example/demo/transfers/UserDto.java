@@ -1,18 +1,20 @@
-package com.example.demo.Form;
+package com.example.demo.transfers;
 
+import com.example.demo.entity.User;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-@Builder(toBuilder = true)
-public class UserForm {
+@NoArgsConstructor
+@Builder
+public class UserDto {
+
+
     private String firstName;
     private String lastName;
-    private String userName;
-    private String password;
+
 
 }
